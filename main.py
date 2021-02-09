@@ -39,7 +39,7 @@ print("Рассылка началась!       \n----------------\n")
 for i in range(len(IDS)):
     time.sleep(DELAY)
     try:
-        #send(i)
+        send(i)
         print(f'сообщение {i} отправлено..')
     except vk_api.exceptions.Captcha as captcha:
         print('Ошибка вымени')
